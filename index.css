@@ -1,0 +1,223 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #131516;
+    font-family: Avenir, sans-serif;
+    padding: 0 3rem;
+    height: 100vh;
+}
+
+h1 {
+    color: #d1ccc5;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #beb8ae;
+}
+
+svg {
+    margin-right: 8px;
+}
+
+button {
+    font-family: inherit;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invite-button--bot {
+    color: #edebe8;
+    fill: #edebe8;
+    background: #5865f2;
+}
+
+.invite-button--bot:hover {
+    background: #4752c4;
+}
+
+.invite-button--server {
+    color: #beb8ae;
+    fill: #beb8ae;
+    background: #0000;
+    border-width: 2px;
+    border-color: #41474a;
+    border-style: solid;
+}
+
+.invite-button--server:hover {
+    background: #41474a;
+}
+
+.invite-buttons {
+    display: flex;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    padding: 1.5rem 0px;
+}
+
+.nav ul {
+    margin: 0;
+    padding-inline-start: 0px;
+}
+
+.nav li {
+    display: inline-block;
+    z-index: 2;
+}
+
+.nav a {
+    padding: 0.5em;
+    color: #beb8ae;
+    z-index: 2;
+}
+
+.nav a:hover {
+    color: #d1ccc5;
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    padding: 0 3rem;
+}
+
+#logo img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+#logo > a:hover {
+    color: #6599db;
+}
+
+#current {
+    color: #73a4df;
+}
+
+#current:hover {
+    color: #6599db;
+}
+
+section {
+    padding: 3rem;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    color: #d1ccc5;
+    position: relative;
+    padding: 1.5em 0;
+}
+
+footer > span {
+    position: absolute;
+    bottom: 0px;
+}
+
+.image-div {
+    position: absolute;
+    top: 5rem;
+    left: auto;
+    right: 3rem;
+    bottom: auto;
+    filter: grayscale(100%);
+    width: 100%;
+    max-width: 26rem;
+    margin: -7rem auto auto;
+    margin-right: 3rem;
+    display: block;
+    z-index: -1;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    z-index: -1;
+}
+
+.window {
+    width: 100%;
+    padding-bottom: 103%;
+    z-index: -1;
+}
+
+#background-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-position: center center;
+    z-index: -1;
+}
+
+@media (max-width: 715px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    h1 {
+        margin-top: 0;
+        padding-top: 1em;
+    }
+
+    #logo {
+        padding-left: 1em;
+        padding-top: 2.5em;
+        z-index: 1;
+    }
+
+    .navbar {
+        position: relative;
+    }
+    .invite-buttons {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .image-div {
+        left: 0;
+        right: 0;
+    }
+}
